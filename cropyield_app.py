@@ -1,3 +1,8 @@
+from sklearn.preprocessing import LabelEncoder, MinMaxScaler
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
+from sklearn.model_selection import train_test_split
+
 # Load data
 url = 'https://raw.githubusercontent.com/michalis0/MGT-502-Data-Science-and-Machine-Learning/main/data/yield_df.csv'
 df_yield = pd.read_csv(url)
